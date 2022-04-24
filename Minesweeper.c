@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <ctype.h>
+#include <conio.h>
 
 #define SIZE 7
 #define BOMB 9
