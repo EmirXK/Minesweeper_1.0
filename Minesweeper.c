@@ -153,8 +153,14 @@ int main() {
 			printf("\n");
 		}
 		invalid_input:
+		x = 998;
+		y = 988;
 		printf("\nUser Input(x y) : ");
 		scanf("%d %d",&x,&y);
+		if (x == 998 && y == 988) {
+			printf("Fatal error");
+			break;
+		}
 		if (x >= SIZE || y >= SIZE || x < 0 || y < 0) {
 			printf("Invalid input\n");
 			goto invalid_input;
